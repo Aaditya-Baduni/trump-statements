@@ -1,0 +1,96 @@
+/* Import Vag Rounded and Asap font */
+
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css");
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+body {
+    background-color: rgb(31, 42, 53);
+}
+
+
+/* Header */
+
+#website-title {
+    position: absolute;
+}
+
+#website-name {
+    font-size: 1.8rem;
+    color: turquoise;
+    font-family: VagRounded, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header {
+    background-color: white;
+    padding: 1%;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+header>p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+/* The game */
+
+#game {
+    text-align: center;
+}
+
+#game > * {
+    margin: 0.5%;
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* Scoreboard */
+
+#score-board {
+    margin: 15px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+    display: inline-block;
+}
+
+#score-board>p {
+    color: white;
+}
+
+/* Statements made by Trump */
+#trump-statements-div {
+    margin: 20px;
+}
+
+#trump-statements-div > p {
+    color: white;
+    font-size: 3rem;
+}
+
+/* Yes, No buttons */
+.yes-no-btn {
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+/* Animations */
+.wrong {
+    background-color: red;
+}
+
+.right {
+    background-color: green;
+}
+
+/* Smaller screen optimisation */
+@media (max-width: 1100px) {
+    #website-title {
+        position: static;
+    }
+    #trump-statements-div > p {
+        font-size: 2rem;
+    }
+}
